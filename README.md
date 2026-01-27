@@ -43,8 +43,11 @@ DATABASE_URL="postgresql://username:password@localhost:5432/database?schema=publ
 `PORT` = Port yang digunakan backend
 
 `username` = Isi dengan username postgreSQL
+
 `password` = Isi dengan password postgreSQL
+
 `localhost:5432` = host dan port yang digunakan postgreSQL
+
 `database` = isi dengan nama database
 
 ### 4. Migrasi Tabel
@@ -58,9 +61,13 @@ node src/index.js
 ## Endpoint Buku
 
 GET `http://localhost:5000/api/buku/`: Mengambil semua buku
+
 GET `http://localhost:5000/api/buku/:id`: Mengambil buku berdasarkan id
+
 POST `http://localhost:5000/api/buku/`: Membuat buku baru ke dalam tabel
+
 PUT `http://localhost:5000/api/buku/`: Memperbarui buku lama
+
 DELETE `http://localhost:5000/api/buku/`: Menghapus buku
 
 
