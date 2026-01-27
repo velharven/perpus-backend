@@ -54,7 +54,7 @@ DATABASE_URL="postgresql://username:password@localhost:5432/database?schema=publ
 `npx prisma migrate dev`
 
 ### 5. Jalankan Server
-node src/index.js
+`node src/index.js`
 
 ---
 
@@ -69,10 +69,4 @@ POST `http://localhost:5000/api/buku/`: Membuat buku baru ke dalam tabel
 PUT `http://localhost:5000/api/buku/`: Memperbarui buku lama
 
 DELETE `http://localhost:5000/api/buku/`: Menghapus buku
-
-
-
-
-
-
 
