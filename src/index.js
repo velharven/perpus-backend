@@ -10,6 +10,7 @@ app.use(express.json());
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false },
 });
 
 app.get("/api/buku", async (req, res) => {
@@ -75,6 +76,4 @@ app.delete("/api/buku/:id", async (req, res) => {
   }
 });
 
-app.listen(process.env.PORT, () => {
-  console.log(`Server jalan di http://localhost:${process.env.PORT}`);
-});
+module.exports = app;
