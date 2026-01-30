@@ -91,4 +91,6 @@ app.delete("/api/buku/:id", async (req, res) => {
   }
 });
 
+console.log("Database connected:", process.env.DATABASE_URL);
+
 module.exports = app;
