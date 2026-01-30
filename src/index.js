@@ -21,7 +21,7 @@ app.listen(PORT, () => {
 
 app.get("/", (req, res) => {
   res.json({
-    message: "API Perpus berjalan 🚀",
+    message: "API Perpus berjalan",
     endpoints: {
       buku: "/api/buku"
     }
