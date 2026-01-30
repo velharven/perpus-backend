@@ -13,6 +13,12 @@ const pool = new Pool({
   ssl: { rejectUnauthorized: false },
 });
 
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log("Server running on port", PORT);
+});
+
+
 app.get("/api/buku", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM buku ORDER BY id ASC");
