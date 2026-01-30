@@ -19,6 +19,15 @@ app.listen(PORT, () => {
 });
 
 
+app.get("/", (req, res) => {
+  res.json({
+    message: "API Perpus berjalan 🚀",
+    endpoints: {
+      buku: "/api/buku"
+    }
+  });
+});
+
 app.get("/api/buku", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM buku ORDER BY id ASC");
