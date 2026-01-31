@@ -35,7 +35,9 @@ cd perpus-backend
 ### 2. Install Dependencies
 `npm install`
 
-### 3. Konfigurasi File .env
+### 3. Buat file .env
+
+### 4. Konfigurasi File .env
 ```bash
 PORT=5000
 DATABASE_URL="postgresql://username:password@localhost:5432/database?schema=public"
@@ -50,10 +52,10 @@ DATABASE_URL="postgresql://username:password@localhost:5432/database?schema=publ
 
 `database` = isi dengan nama database
 
-### 4. Migrasi Tabel
+### 5. Migrasi Tabel
 `npx prisma migrate dev`
 
-### 5. Jalankan Server
+### 6. Jalankan Server
 `node src/index.js`
 
 ---
